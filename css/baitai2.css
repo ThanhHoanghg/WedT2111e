@@ -1,0 +1,27 @@
+div{
+    font-size: 15px;
+    line-height: 15px;
+    text-align: right;
+}
+h3{
+    border-top: dashed 1px #523541;
+    text-align: left;
+    text-decoration: underline;
+    color: #b50f46;
+}
+ul {
+    text-align: left;
+    list-style: none;
+    font-weight: 15;
+    line-height: 15px;
+}
+*{
+    list-style: none;
+}
+#bt2{
+    text-align: center;
+}
+img{
+    width: 200px;
+    height: 400px;
+}
