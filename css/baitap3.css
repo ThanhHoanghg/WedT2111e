@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+}
+body{
+    background-color: #ffffff;
+    color: #232122;
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 400;
+    font-family: 'Roboto',sans-serif;
+    text-align: left;
+}
+#page{
+    width: 1200px;
+    margin: 20px 40px 0px 40px;
+}
+.tren{
+    float: left;
+    width: 100%;
+    background-color: #b8c1ca;
+    padding: 40px 20px 50px 400px;
+}
+.tren h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 0;
+    letter-spacing: 1.5px;
+}
+.tren h3{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.duoi{
+    float: left;
+    width: 100%;
+    background-color: #eeeeee;
+}
+.trai{
+    background-color: #e8e8e8;
+    width: 250px;
+    padding: 20px 50px;
+    margin-left: 80px;
+    margin-top: -60px;
+    line-height: 2;
+}
+.contact{
+    border-bottom: 1px solid #9b0e0e;
+}
+.contact li{
+    font-size: 16px;
+    list-style: none;
+}
+.education{
+    border-bottom: 1px solid #9b0e0e;
+}
+.phai{
+    margin-top: -890px;
+    margin-left: 400px;
+}
+.profle{
+
+    border-bottom: 1px solid #9b0e0e;
+    line-height: 1.5;
+    margin: 20px;
+}
+.pro{
+    margin: 20px;
+}
+.nd{
+    padding-left: 20px;
+}
+.profle p{
+    line-height: 1.5;
+}
+.pro p{
+    line-height: 1.5;
+}
+
