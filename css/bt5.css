@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    color: rgba(0, 0, 0, 0.65); /
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+.page{
+    width: 1000px;
+    height: 800px;
+    background-color: #afafaf;
+    float: none;
+    margin: 0px auto;
+    padding: 40px 60px;
+}
+.ndc{
+    width: 100%;
+    margin: 80px auto;
+    padding: 40px 40px ;
+    background-color: #eeeeee;
+    height: 650px;
+    border-radius: 20px;
+}
+.formm{
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    line-height: 2.5;
+}
+.haha{
+    float: left;
+    width: 45%;
+    height: 40px;
+}
+.hihi{
+    width: 100%;
+    height: 40px;
+}
+.hahaa{
+    float: right;
+    width: 45%;
+    height: 40px;
+
+}
+
