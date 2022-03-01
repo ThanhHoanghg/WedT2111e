@@ -23,7 +23,7 @@ body{
     margin: 80px auto;
     padding: 40px 40px ;
     background-color: #eeeeee;
-    height: 700px;
+    height: 750px;
 }
 .menuas{
     width: 100%;
@@ -32,7 +32,7 @@ body{
 .menuas li{
     font-size: 20px;
     float: left;
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin: 20px;
     background-color: #cccccc;
 }
