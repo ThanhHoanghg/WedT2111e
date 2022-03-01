@@ -10,9 +10,9 @@
 </div>
 
 <script type="text/javascript">
-  var r = Math.random(); // 1 số ngẫu nhiên từ 0->1
-  r = r*100; // (r>=0 && r<100)
-  r = parseInt(r); // r>=0 && r<=99
+  var r = Math.random();
+  r = r*100;
+  r = parseInt(r);
   console.log(r);
   var arr = [];
   while(arr.length<5){
@@ -22,9 +22,8 @@
       n = parseInt(n);
     }while (isNaN(n) || n<0 || n>99);
 
-    // kiem tra n ddax nằm trong mảng arr hay chưa?
     if(!arr.includes(n)){
-      arr.push(n); // nạp 1 số n vào mảng
+      arr.push(n);
     }
   }
   for(var i=0;i<arr.length;i++){
