@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    color: rgba(0, 0, 0, 0.65); /
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+.page{
+    width: 1000px;
+    background-color: #3498db;
+    float: none;
+    margin: 0px auto;
+    padding: 40px 60px;
+}
+.ndc{
+    width: 100%;
+    margin: 80px auto;
+    padding: 40px 40px ;
+    background-color: #eeeeee;
+    height: 700px;
+}
+.formm{
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    line-height: 2.5;
+}
+.haha{
+    float: left;
+    width: 100%;
+    height: 70px;
+}
+h1 {
+    text-align: center;
+    color: #ffffff;
+    line-height: 2.0;
+    font-weight: 1000;
+    font-size: 50px;
+}
+.btn-submit{
+    float: left;
+    color: #ffffff;
+    background-color: #2d79dc;
+    padding: 5px 15px;
+    height: 40px;
+    width: 80px;
+}
+.btn-submit:hover{
+    background-color: #b3e10f;
+}
+
