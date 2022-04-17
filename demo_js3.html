@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo js 3</title>
+    <link rel="stylesheet" href="css/demojs.css">
+</head>
+<body>
+    <div class="box" onmouseenter="boxAction1()" onmouseleave="boxAction2()">
+
+    </div>
+    <input id="ips" type="text" placeholder="Ho" onkeyup="inputAction1();typing1(this)" onkeydown="inputAction2()" onchange="inputAction3()">
+    <input id="ips1" type="text" placeholder="ten dem" onkeyup="inputAction1;typing1(this)" onkeydown="inputAction2()" onchange="inputAction3()">
+    <input id="ips2" type="text" placeholder="Ten" onkeyup="inputAction1();typing1(this)" onkeydown="inputAction2()" onchange="inputAction3()">
+   <span id="typing">Typingg: </span>
+    <p id="content"></p>
+    <script type="text/javascript">
+    function boxAction1(){
+        console.log("Action 11111.....");
+    }
+    function boxAction2(){
+        console.log("Action 22222 ......");
+    }
+    var ips = document.getElementById("ips")
+    var ips1 = document.getElementById("ips1")    //la 1 object
+    var ips2 = document.getElementById("ips2")
+    var ct = document.getElementById("content")
+    var tp = document.getElementById("typing")
+    function typing1(element){
+        var v = element.value;
+        tp.innerText = "Typing: "+v;
+    }
+    function inputAction1(){
+        var v1 = ips.value;
+        var v3 = ips1.value;
+        var v2 = ips2.value;
+        ct.innerText = v1+" "+v3+" "+v2;
+        // console.log("keyup......."+v);
+    }
+    function inputAction2(){
+        var v = ips.value;
+        console.log("keydown......."+v);
+    }
+    function inputAction3(){
+        var v = ips.value;
+        console.log("Change.........."+v);
+    }
+</script>
+</body>
+</html>

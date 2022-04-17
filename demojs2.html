@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo js2</title>
+</head>
+<body>
+    <h1 id="title" class="tit">heloooo</h1>
+    <p id="para">udafhsjasdhfjlskdahfjldsahfljdsahfljsdahjkflhdslkjafhdsjhkldsafhjkdshfsdkjlahfsah</p>
+    <input type="number" min="1" id="input-min" placeholder="Minutes"><button onclick="timerCountdown()" type="button">Run</button>
+    <h2><span id="minutes">00</span>:<span id="seconds">00</span></h2>
+    <button onclick="onoff()">on/off</button>
+    <div id="light">Light</div>
+    <script type="text/javascript">
+        function onoff(){
+            var l= document.getElementById("light");
+            if (l.style.display == "none"){
+                l.style.display = "block";
+            }else {
+                l.style.display = "none";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+      var obj ={};
+      obj.name=" Hoang Trung Thanh "; // object.attribute = value;
+      obj.age = 19;
+      console.log(obj);
+      var obj2 = {
+          name:" Nguyen Van A", // attribute:value,
+          age:20,
+          address:"so 8 ttt",
+          PID: 11111111,
+          tel:"0365532325",
+          khaibao: function (){
+              console.log("CCCD:"+this.PID+" tel:"+this.tel); // this la doi tuong ngham dinh ben trong khai bao
+          }
+    };//khai baos
+    // console.log(obj2.name);
+    // obj2.khaibao();
+    // obj2.PID = 123456789;
+    // console.log(obj2,name);
+    // obj2.khaibao();//thuc hien hanh vi
+      var obj3 = Object.create(obj2);
+      obj3.PID = 987987987;
+      obj3.tel = "11112121";
+      obj3.khaibao();
+  </script>
+<script type="text/javascript">
+    var t = document.getElementById("title");
+    setTimeout(function (){
+        t.style.color = "red";
+        t.innerText = "helo cac ban nha"
+        t.innerHTML += "<i>Ha Ha Ha</i>"
+        t.classList.add("abc")
+    },3000);
+    var r = document.getElementById("para");
+    var f = false;
+    setInterval(function(){
+        if (f == false){
+            r.style.color="green";
+            f = true;
+        }else {
+            r.style.color = "blue"
+            f=false;
+        }
+    },1000);
+
+
+    function timerCountdown(){
+        var ip = document.getElementById("input-min")
+        var min=0,sec=0;
+        min = ip.value;
+        if (min>0){
+            var span_min = document.getElementById("minutes")
+            var span_sec = document.getElementById("seconds")
+            var tiner = setInterval(function (){
+                var n_txt = min<10?("0"+min):min;
+                var sec_txt = sec<10?("0"+sec):sec;
+                span_min.innerText = n_txt;
+                span_sec.innerText = sec_txt;
+                sec--;
+                if (sec<0){
+                    sec=59;
+                    min--;
+                }
+                if (min<0){
+                    clearInterval(tiner);
+                }
+            },1000);
+        }else {
+            alert("vui long nhap so phut")
+        }
+    }
+</script>
+</body>
+</html>

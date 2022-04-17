@@ -1,0 +1,30 @@
+.form-group{
+    float: left;
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+.form-control{
+    float: left;
+    width: 100%;
+    height: 30px;
+}
+.form-group input[type=file]{
+    float: left;
+    width: 100%;
+    height: 30px;
+}
+.form-group input[name=gender]{
+    margin-left: 10px;
+}
+/* regex */
+.btn-submit{
+    float: left;
+    color: #ffffff;
+    background-color: darkred;
+    padding: 5px 15px;
+    border: 1px solid darkred;
+}
+.btn-submit:hover{
+    background-color: #a10303;
+}

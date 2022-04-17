@@ -1,0 +1,9 @@
+.box {
+    border: 10px solid red;
+}
+.col-md-1{
+    border: 10px solid green;
+}
+.col-md-2{
+    border: 10px solid blue;
+}

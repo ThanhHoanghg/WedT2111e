@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fafafa;
+    color: #242424;
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;/* font backup */
+    text-align: left;/* center */
+}
+img{
+    max-width: 100%;/* nếu ảnh bé hơn khung thì giữ nguyên, to hơn thi thu nhỏ lại */
+}
+.products{
+    width: 1200px;
+    margin-left:auto;
+    margin-right: auto;
+    float:none;
+}
+.content{
+    float: left;
+    width: 100%;
+    border: 1px solid red;
+}
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.item{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    margin: 15px 0;
+}
+.item-box{
+    float: left;
+    width: 100%;
+    box-shadow: 0 0 5px #aaaaaa;
+}
+/* Responsive web design /*
